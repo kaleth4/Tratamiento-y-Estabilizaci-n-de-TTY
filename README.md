@@ -3,6 +3,7 @@
 El tratamiento de la TTY se realiza para transformar una **shell inversa simple** (que no autocompleta con el tabulador, no permite usar las flechas ni usar atajos como `Ctrl+C`) en una **consola completamente interactiva y estable**.
 
 A continuación se detallan las secuencias de comandos más utilizadas en auditorías de seguridad y hacking ético para estabilizar la terminal según las herramientas disponibles en el sistema víctima.
+<img width="1280" height="591" alt="image" src="https://github.com/user-attachments/assets/f9d88e82-bffd-4d6e-bd80-921cca8f37b3" />
 
 ---
 
@@ -37,6 +38,7 @@ stty raw -echo ; fg
 stty raw -echo; fg
 ```
 *(Al escribir `fg` y presionar Enter, volverás automáticamente a la shell de la máquina víctima, aunque no veas texto de inmediato)*.
+<img width="1280" height="591" alt="image" src="https://github.com/user-attachments/assets/f9a17da6-28a9-45fd-a803-e3e5cbdc6eab" />
 
 ### Paso 4: En la máquina víctima (Reiniciar y limpiar variables)
 Escribe los siguientes comandos dentro de la shell recuperada para restablecer el entorno gráfico y habilitar los atajos:
