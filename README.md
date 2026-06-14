@@ -30,6 +30,10 @@ Envía la shell actual al segundo plano de tu sistema operativo:
 ### Paso 3: En tu máquina atacante (Configurar la consola local)
 Tu consola se habrá quedado en espera. Ejecuta lo siguiente para que tu terminal transmita los comandos en crudo y no interprete tus atajos locales:
 ```bash
+stty raw -echo ; fg
+```
+(Alternativa)
+```bash
 stty raw -echo; fg
 ```
 *(Al escribir `fg` y presionar Enter, volverás automáticamente a la shell de la máquina víctima, aunque no veas texto de inmediato)*.
